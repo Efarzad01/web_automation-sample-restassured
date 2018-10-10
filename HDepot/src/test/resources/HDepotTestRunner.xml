@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="HDepot Automation Script " parallel="tests">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="60.0"/>
+    <parameter name="url" value="https://www.homedepot.com/"/>
+    <test name = "Test">
+        <classes>
+            <class name="base.HomeTest"></class>
+            <class name="datatest.XcelReaderTest"></class>
+            <class name="prohometest.Protest"></class>
+            <class name="dataMongo.MongoTest"></class>
+            <class name="helpPageTest.HelpPage"></class>
+            <class name="base.TestLoginPage"></class>
+            <class name="seriesOftest.ListOfTest"></class>
+        </classes>
+    </test>
+</suite>
+        <!-- <test name = "HDepot 2" preserve-order="true">
+        <classes>
+            <class name ="datatest.XcelReaderTest"/>
+        </classes>
+    </test>-->
+    <!--<test name = "HDepot 3" preserve-order="true">
+        <classes>
+            <class name="prohometest.Protest"/>
+        </classes>
+    </test>
+    <test name = "HDepot 4" preserve-order="true">
+        <classes>
+            <class name = "testSearch.CreditCardTest"/>
+        </classes>
+    </test>
+    <test name = "HDepot 5" preserve-order="true">
+        <classes>
+            <class name = "testSearch.TestSearch"/>
+        </classes>
+    </test>
+    <test name = "HDepot 6" preserve-order="true">
+        <classes>
+            <class name = "seriesOftest.ListOfTest"/>
+        </classes>
+    </test>
+-->

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="BestBuy" />
+        <module name="Expedia" />
+        <module name="GEICO" />
+        <module name="Generic" />
+        <module name="HBO" />
+        <module name="RestAPI" />
+      </profile>
+      <profile name="Annotation profile for hybrid-framework" enabled="true">
+        <sourceOutputDir name="../HBO/HomeDepot1/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../HBO/HomeDepot1/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="HomeDepot1" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Airbnb" target="1.5" />
+      <module name="Booking.com" target="1.5" />
+      <module name="CITI" target="1.5" />
+      <module name="HBO (1)" target="1.5" />
+      <module name="HomeDepot" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

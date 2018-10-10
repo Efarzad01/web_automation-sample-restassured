@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GEICO Automation Script " parallel="false">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="60.0"/>
+    <parameter name="url" value="https://www.geico.com//"/>
+
+    <test name="AutoInsurancePackage">
+        <classes>
+            <class name="autoInsurancePackageTest.GetQuoteTest"/>
+        </classes>
+    </test>
+    <test name="HomeOwnersPackage">
+        <classes>
+            <class name="homeOwnersPackageTest.CustomerInformationTest"/>
+        </classes>
+    </test>
+    <test name = "HomePage">
+        <classes>
+            <class name="homePageTest.DropDownTest"/>
+            <class name="homePageTest.FeedbackTest"/>
+            <class name="homePageTest.InsuranceProductsTest"/>
+            <class name ="homePageTest.LoginTest" />
+            <class name="homePageTest.LoginTestGoogleSheet"/>
+            <class name="homePageTest.SearchTest"/>
+        </classes>
+    </test>
+    <test name ="Navigation">
+        <classes>
+            <class name="navigationBarTest.InformationAndInsuranceHoverTest"/>
+            <class name="navigationBarTest.NavigationBarTest"/>
+        </classes>
+    </test>
+    <test name="RentersInsurance">
+        <classes>
+            <class name="rentersInsuranceTest.PropertySalesTest"/>
+            <class name="rentersInsuranceTest.RentersPropertySalesTest"/>
+        </classes>
+    </test>
+    <test name ="Screenshot">
+        <classes>
+            <class name="screenshotTest.ScreenShotTest"/>
+        </classes>
+    </test>
+</suite>
